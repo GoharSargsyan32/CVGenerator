@@ -8,7 +8,7 @@ import { ROUTE_CONSTANTS } from "./core/utils/constants";
 const Layout = () => {
     return (
         <main>
-            <Link to={ROUTE_CONSTANTS.LOGIN}><Button>Sign in</Button></Link>
+            <Link to={ROUTE_CONSTANTS.LOGIN}><Button type="primary">Sign in</Button></Link>
             <Outlet/>
         </main>
     )
