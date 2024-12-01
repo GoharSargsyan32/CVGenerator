@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, Button, Typography, Image } from "antd";
+import { Card, Button, Typography } from "antd";
 
 const CVPreview = ({ data, onRestart }) => {
   const { profile, education, skills, projects, social } = data;

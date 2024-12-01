@@ -15,9 +15,11 @@ const App = () => {
   const dispatch = useDispatch();
   const { loading, authUserInfo: { isAuth } } = useSelector(store => store.userProfile);
 
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     dispatch(fetchUserProfileInfo());
-  }, []);
+  },[]);
 
   return (
     <LoadingWrapper loading={loading}>
