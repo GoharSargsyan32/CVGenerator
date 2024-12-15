@@ -28,6 +28,8 @@ const App = () => {
             createBrowserRouter(
               createRoutesFromElements(
                 <Route path="/" element={<Layout />}>
+                  <Route path="/"
+                         element={isAuth ? <Navigate to={ROUTE_CONSTANTS.FORM}/> : <Login />}/>
                   <Route path={ROUTE_CONSTANTS.LOGIN}
                          element={isAuth ? <Navigate to={ROUTE_CONSTANTS.FORM}/> : <Login />}/>
                   <Route path={ROUTE_CONSTANTS.REGISTER}
